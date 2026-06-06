@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
+import { asset } from "@/lib/site";
 
 const RESULTS = [
-  "/img/resultado1.png",
-  "/img/resultado2.png",
-  "/img/resultado3.png",
+  asset("/img/resultado1.png"),
+  asset("/img/resultado2.png"),
+  asset("/img/resultado3.png"),
 ];
 
 export default function Results() {

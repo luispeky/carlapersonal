@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { LogoMark } from "./Logo";
 import { CalendarIcon, WhatsAppIcon } from "./icons";
-import { whatsappLink } from "@/lib/site";
+import { asset, whatsappLink } from "@/lib/site";
 
 export default function Hero() {
   return (
@@ -71,7 +71,7 @@ export default function Hero() {
           <div className="absolute inset-0 -rotate-6 rounded-[2rem] bg-gradient-to-tr from-brand-500 to-brand-300 opacity-30 blur-sm" />
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 shadow-glow">
             <Image
-              src="/img/FotoCarla.jpeg"
+              src={asset("/img/FotoCarla.jpeg")}
               alt="Carla Matos, Personal Trainer"
               width={640}
               height={800}

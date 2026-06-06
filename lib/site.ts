@@ -1,3 +1,10 @@
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+/** Prefixa um caminho de asset estático com o basePath (necessario no GitHub Pages). */
+export function asset(path: string) {
+  return `${BASE_PATH}${path}`;
+}
+
 export const WHATSAPP_NUMBER = "5591986047531";
 
 export const INSTAGRAM_URL = "https://www.instagram.com/c.matos_";
